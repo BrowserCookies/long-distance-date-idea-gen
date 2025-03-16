@@ -7,6 +7,7 @@
   margin: 0;
   padding: 0;
   font-family: "Fredoka";
+  user-select: none;
 }
 
 .wrapper {
@@ -42,6 +43,49 @@
 
     .card:hover {
       backdrop-filter: brightness(0.8);
+    }
+  }
+
+  .generator {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    display: none;
+
+    h1 {
+      margin-inline: auto;
+      margin-top: auto;
+      margin-bottom: 1vw;
+    }
+
+    .firstP {
+      margin-inline: auto;
+      margin-bottom: 1vw;
+    }
+
+    .categoryDiv {
+      margin-inline: auto;
+      margin-bottom: 3vw;
+    }
+
+    label {
+      margin-inline: auto;
+      margin-bottom: auto;
+      border: 3px solid var(--pc-);
+      padding-inline: 2vw;
+      padding-block: 0.6vw;
+      font-size: 1.5vw;
+      color: var(--pc-);
+      border-radius: 1vw;
+      font-weight: bold;
+      cursor: pointer;
+      transition: 200ms;
+    }
+
+    label:hover {
+      background: var(--pc-);
+      color: var(--sc-);
     }
   }
 }
