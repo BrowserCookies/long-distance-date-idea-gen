@@ -1,0 +1,47 @@
+:root {
+  --pc-: #ef5263;
+  --sc-: #ffffff;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Fredoka";
+}
+
+.wrapper {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  background: linear-gradient(170deg, #ffffff, #ef526281);
+
+  .card-container {
+    width: fit-content;
+    height: fit-content;
+    margin: auto;
+    display: grid;
+    grid-template-columns: 10vw 10vw 10vw;
+    grid-template-rows: auto;
+    gap: 1vw;
+
+    .card {
+      width: 10vw;
+      height: 13vh;
+      border-radius: 1vw;
+      display: flex;
+      cursor: pointer;
+      transition: 200ms;
+
+      label {
+        margin: auto;
+        font-size: 2vw;
+        cursor: pointer;
+      }
+    }
+
+    .card:hover {
+      backdrop-filter: brightness(0.8);
+    }
+  }
+}
